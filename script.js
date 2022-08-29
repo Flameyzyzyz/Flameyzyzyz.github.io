@@ -11,3 +11,4 @@ function openNav() {
     document.getElementById("openbtn").style.transition = "0.5s";
     document.getElementById("openbtn").style.left = "-5px";
   }
+  
