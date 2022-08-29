@@ -9,8 +9,8 @@
     width:100%;
     height:100%;
     z-index:-1;
-  }
-  #ColorOverlay{
+}
+#ColorOverlay{
     position:fixed;
     padding: 0;
     margin: 0;
@@ -20,13 +20,13 @@
     width:100%;
     height:100%;
     opacity:0.8;
-  }
-  #me{
+}
+#me{
     width:100%;
-  }
+}
   
-  /* Sponsors */
-  .titlebox {
+/* Sponsors */
+.titlebox {
     position: fixed;
     top: 100px;
     width: 60%;
@@ -35,48 +35,48 @@
     font-size: 30px;
     font-family: cursive;
     color: #434343ff
-  }
-  .divider {
+}
+.divider {
     position: fixed;
     top: 150px;
     height: 5px;
     width: 60%;
     left: 20%;
     background-color: #434343ff
-  }
-  .MSDE {
+}
+.MSDE {
     position: fixed;
     top: 30%;
     left: 5%;
-  }
-  .NASA {
+}
+.NASA {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-  }
-  .Battelle {
+}
+.Battelle {
     position: fixed;
     top: 30%;
     right: 5%;
-  }
-  .Spirent {
+}
+.Spirent {
     position: fixed;
     top: 60%;
     left: 5%;
-  }
-  .MCL {
+}
+.MCL {
     position: fixed;
     top: 60%;
     right: 5%;
   }
   
-  /* Contact */
-  /*.html {
+/* Contact */
+/*.html {
     Overflow-y:scroll;
     scroll-behavior: smooth;
-  }*/
-  .emailbox {
+}*/
+.emailbox {
     padding: 0;
     margin: 0;
     position: fixed;
@@ -86,8 +86,8 @@
     top: 15%;
     color: #fff;
     font-size: 25px;
-  }
-  .contact_insta {
+}
+.contact_insta {
     top: 35%;
     left: 30%;
     position: fixed;
@@ -96,41 +96,41 @@
     top: 55%;
     left: 29%;
     position: fixed;
-  }
-  .contact_yt {
+}
+.contact_yt {
     top: 35%;
     position: fixed;
     right: 32%;
-  }
-  .ytbox {
+}
+.ytbox {
     top: 55%;
     right: 29%;
     position: fixed;
     text-align: center;
-  }
-  
-  /* Timeline */
-  .noselect {
+}
+
+/* Timeline */
+.noselect {
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
     -khtml-user-select: none; /* Konqueror HTML */
     -moz-user-select: none; /* Old versions of Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
       user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
-  }
-  body{
+}
+body{
     background-color: #1c4587ff;
     z-index: -1
-  }
-  .Entry1Line {
+}
+.Entry1Line {
     position: fixed;
     top: 20%;
     height: 5px;
     width: 30px;
     right: 50%;
     background-color: #434343ff
-  }
-  .TimeLine {
+}
+.TimeLine {
     position: fixed;
     top: 20%;
     height: 100%;
@@ -138,11 +138,11 @@
     left: 50%;
     transform: translateX(-50%);
     background-color: #434343ff;
-  }
-  
-  /* Topnav */
-  /* Add a black background color to the top navigation */
-  .topnav {
+}
+
+/* Topnav */
+/* Add a black background color to the top navigation */
+.topnav {
     position: fixed;
     z-index: 2;
     width: 100%;
@@ -155,27 +155,27 @@
     overflow: hidden;
     border-bottom: 10px solid rgba(0, 83, 207, 0.75);
     background: #000000bf;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
     color: #f2f2f2;
     text-align: center;
     padding: 16px 16px;
     text-decoration: none;
     font-size: 25px;
     font-family: 'Trebuchet MS';
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
     background-color: #04AA6D;
     color: white;
-  }
-  
-  
-  /* Sidepanel */
-  .sidepanel {
+}
+
+
+/* Sidepanel */
+.sidepanel {
     height: 100%; /* Specify a height */
     width:250px; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
@@ -188,10 +188,10 @@
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
-  }
-  
-  /* The sidepanel links */
-  a {
+}
+
+/* The sidepanel links */
+a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-family: 'Trebuchet MS';
@@ -199,55 +199,55 @@
     color: #efefef;
     display: block;
     transition: 0.3s;
-  }
-  
-  /* Add a color to the active/current link */
-  .sidepanel a.active {
+}
+
+/* Add a color to the active/current link */
+.sidepanel a.active {
     background: rgba(255, 255, 255, 0.5);
     color: #303030;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidepanel a:hover {
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
     /* background: rgba(100, 100, 100, 0.5); */
     color: #adadad;
     font-size: 27px;
-  }
-  
-  .sidepanel a.active:hover {
+}
+
+.sidepanel a.active:hover {
     background: rgba(255, 255, 255, 0.5);
     color: #434343;
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .closebtn {
+}
+
+/* Position and style the close button (top right corner) */
+.closebtn {
     position: absolute;
     width: 25px;
     top: 1px;
     right: 14px;
     font-size: 36px;
     margin-left: 50px;
-  }
-  .closebtn:hover {
+}
+.closebtn:hover {
     background: trasnparent;
-  }
-  
-  .Insta {
+}
+
+.Insta {
     position: absolute;
     margin-left: 0px;
     right: 10px;
     bottom: 70px;
-  }
-  
-  .YT {
+}
+
+.YT {
     position: absolute;
     margin-left: 0px;
     right: 50px;
     bottom: 70px;
-  }
-  
-  /* Style the button that is used to open the sidepanel */
-  .openbtn {
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
     cursor: pointer;
     position: fixed;
     top: -5px;
@@ -256,24 +256,24 @@
     height: 25px;
     border: none;
     transition: 0s;
-  }
-  
-  .FIRSTLogo {
+}
+
+.FIRSTLogo {
     cursor: pointer;
     position: fixed;
     top: -8px;
     right: -15px;
     width: 10px;
     border: none;
-  }
-  
-  .openbtn:hover {
+}
+
+.openbtn:hover {
     background-color: #434343;
     transition: 0s;
-  }
-  
-  #Textbox1{
-    
-  
-  }
+}
+
+#Textbox1{
+
+
+}
   
