@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <link rel="Icon" href="Icons/Logo.ico"/>
+  <div class="videocontainer fullscr" style="z-index:-2;">
+    <div id="ColorOverlay" class="fullscr" style="background-color:black; opacity:0.9;"></div>
+    <video id="backgroundVid" style="width:100%;" autoplay muted loop>
+      <source src="icons/HomeVid.mkv" type="video/mp4">
+      </video>
+  </div>
+
+  <link rel="Icon" href="icons/YZLogo.svg"/>
   
   <body style="background:#FFFFFF;" class="noselect">
     <script src="script.js"></script>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flameyzyzyz Portfolio</title>
     <link href="style.css" rel="stylesheet" type="text/css"/>
   </body>
 
   <!-- Topnav -->
   <div id="topnav" class="noselect">
-    <a id="menubtn" class="center menubtn" onclick="openNav()" style="transition:.5s;"><img src="Icons/MenuIcon.png" alt="Menu Icon" style="height:30px; width:30px;"></a>
+    <a id="menubtn" class="center menubtn" onclick="toggleNav()" style="transition:0.5s; left:0px;"><img src="icons/MenuIcon.svg" class="center" alt="Menu Icon" style="height:30px; width:30px;"></a>
     <a id="topnavHeading" class="center"><div>Flameyzyzyz <span style="color:#999999ff">#1037</span></div></a>
-    <!-- <a id="FIRSTLogo" class="FIRSTLogo" href="https://www.firstinspires.org/robotics/frc" target="_blank"> <img src="Icons/FIRSTLogo.png" alt="FIRST" style="float:right;height:38px; width:60px"></a> -->
+    <a id="LogoGif" class="LogoGif" href="https://www.firstinspires.org/robotics/frc" target="_blank"> <img src="icons/YZGif.gif" alt="LogoGif" style="float:right;height:38px; width:60px"></a>
   </div>
 
   <!-- Sidepanel -->
-  <div id="sidepanel" class="noselect" style="transition:.5s;">
+  <div id="sidepanel" class="noselect" style="transition:0.5s;">
     <a class="active" href="index.html">Home</a>
-
-    <!-- <a href="Team.html" onclick="closeNav()">Team</a>
-    <a href="Sponsors.html" onclick="closeNav()">Sponsors</a>
-    <a href="Contact.html" onclick="closeNav()">Contact</a>
-    <a href="Timeline.html" onclick="closeNav()">Timeline</a> -->
+    <a href="modeling.html" onclick="toggleNav()">Modeling</a>
+    <a onclick="toggleTab()">Roblox</a>
+    <div id = "robloxTab" class="noselect" style="transition:0.5s;">
+      <a href="scripting.html" onclick="toggleNav()" style="left:50px;">Scripting</a>
+      <a href="ui.html" onclick="toggleNav()" style="left:50px;">UI</a>
+    </div>
+    <a href="other.html" onclick="toggleNav()">Other</a>
   </div>
 
-  <div class="videocontainer fullscr" style="z-index:-1;">
-    <div id="ColorOverlay" class="fullscr" style="background-color:black; opacity:0.8;"></div>
-    <!-- <video id="me" style="width:100%;" autoplay muted loop>
-      <source src="Icons/Home.mov" type="video/mp4">
-    </video> -->
+  <div class="scrollpanel scrollable center fullscr" style="z-index: -1; padding: 50px 0; overflow:scroll;">
+    <div class="sectionscr">
+      <h1 style="text-align: center; padding:2px;">Information</h1>
+      <p style="text-align: center; padding:2px;">Description text blah blah blah</p>
+    </div>
   </div>
 </html>
