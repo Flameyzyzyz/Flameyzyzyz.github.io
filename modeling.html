@@ -37,6 +37,11 @@
     <a href="other.html" onclick="toggleNav()">Other</a>
   </div>
 
+  <!-- <div id="imageOverlay" class="fullscr" style="z-index:5">
+    <div id="ColorOverlay" class="fullscr" style="background-color:black; opacity:0.5;"></div>
+    <img id="displayImage" class="noselect fullscr" style="flex:calc(100%-100px); max-width:calc(100%-50px); max-height:calc(100%-50px); margin:25px 25px;" src="images/modeling/weapons/ValoKnife.png">
+  </div> -->
+
   <div class="scrollpanel scrollable center fullscr" style="z-index: -1; top: 58px; padding: 8px 0; overflow:scroll;">
     <div class="sectionscr">
       <h1 style="text-align: center;">Weaponry</h1>
@@ -46,8 +51,10 @@
     <div class="sectionscr" style="margin-bottom: 80px;">
       <div class="row">
         <div class="column">
-          <img onclick="enlargeImage(this)" src="images/modeling/weapons/CR-L.png">
+          <img src="images/modeling/weapons/CR-L.png">
+          <!-- onclick="enlargeImage(this)"  -->
           <img src="images/modeling/weapons/CR-LStudio.png">
+           <!-- onclick="this.style.display='none';" -->
           <img src="images/modeling/weapons/ValoKnife.png">
         </div>
         <div class="column">
@@ -73,3 +80,4 @@
     </div>
   </div>
 </html>
+

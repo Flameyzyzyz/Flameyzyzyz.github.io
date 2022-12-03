@@ -16,5 +16,17 @@ function enlargeImage(img) {
         img.style.transition = "transform 0.25s ease";
     }
 }
+
+function getPics() {} //just for this demo
+const imgs = document.querySelectorAll('#column a img');
+const fullPage = document.querySelector('#fullpage');
+
+imgs.forEach(img => {
+  img.addEventListener('click', function() {
+    fullPage.style.backgroundImage = 'url(' + img.src + ')';
+    fullPage.style.display = 'block';
+  });
+});
+
 // setTimeout(function (){
 // }, 100)
