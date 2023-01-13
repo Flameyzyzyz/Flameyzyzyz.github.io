@@ -1,45 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <div class="videocontainer fullscr" style="z-index:-2;">
-    <div id="ColorOverlay" class="fullscr" style="background-color:black; opacity:0.9;"></div>
-    <video id="backgroundVid" style="width:100%;" autoplay muted loop>
-      <source src="icons/HomeVid.mkv" type="video/mp4">
-      </video>
-  </div>
-
-  <link rel="Icon" href="icons/YZLogo.svg"/>
-  
-  <body style="background:#FFFFFF;" class="noselect">
-    <script src="script.js"></script>
-    <meta charset="utf-8">
+<!-- Main -->
+<link rel="icon" type="image/x-icon" href="Icons/favicon.ico">
+<body style="background:#171615ff;" class="noselect">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flameyzyzyz Portfolio</title>
-    <link href="style.css" rel="stylesheet" type="text/css"/>
-  </body>
+    <meta charset="utf-8">
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Flameyzyzyz#1037</title>
+</body>
 
-  <!-- Topnav -->
-  <div id="topnav" class="noselect">
-    <a id="menubtn" class="center menubtn" onclick="toggleNav()" style="transition:0.5s; left:0px;"><img src="icons/MenuIcon.svg" class="center" alt="Menu Icon" style="height:30px; width:30px;"></a>
-    <a id="topnavHeading" class="center"><div>Flameyzyzyz <span style="color:#999999ff">#1037</span></div></a>
-    <a id="LogoGif" class="LogoGif" href="https://www.firstinspires.org/robotics/frc" target="_blank"> <img src="icons/YZGif.gif" alt="LogoGif" style="float:right;height:38px; width:60px"></a>
-  </div>
+<!-- SideNav -->
+<div id="sidemenu" style="left:0; top:0; width:20%; height:100%; background-color:#171615ff; position:fixed;">
+    <!-- Menu Button -->
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">
+        <div style="left:0; top:0; width:calc(100%-24px); height:5%; margin:24px;">
+            <img src="Icons/Menu.png" alt="Menu Icon" style="height:80%">
+        </div>
+    </a>
+    <a href="index.html" class="active">Home</a>
+    <a href="#">UI</a>
+    <a href="#">Modeling</a>
+    <a href="#">Unity</a>
+    <a href="#">Code</a>
+    <a href="#">Contact</a>
+</div>
 
-  <!-- Sidepanel -->
-  <div id="sidepanel" class="noselect" style="transition:0.5s;">
-    <a class="active" href="index.html">Home</a>
-    <a href="modeling.html" onclick="toggleNav()">Modeling</a>
-    <a onclick="toggleTab()">Roblox</a>
-    <div id = "robloxTab" class="noselect" style="transition:0.5s;">
-      <a href="scripting.html" onclick="toggleNav()" style="left:50px;">Scripting</a>
-      <a href="ui.html" onclick="toggleNav()" style="left:50px;">UI</a>
+<div id="sidebar" style="left:0; top:0; width:20%; height:100%; background-color:#171615ff; position:fixed;">
+    <!-- NavInfo -->
+    <div style="left:0; width:70%; height:50%; margin:15%; margin-top:50%;">
+        <h1 style="width:100%; height:20%; font-size:32px; font-weight:bold; font-family:Verdana, Geneva, Tahoma, sans-serif; color:#b7b7b7c5;">
+            Home
+        </h1>
+        <h2 style="width:100%; height:20%; font-size:18px; font-weight:10; font-family:Verdana, Geneva, Tahoma, sans-serif; color:#b7b7b7c5;">
+            Welcome, blah blah blah interesting stuff about me blah. I am a Programmer/3D Modeler
+        </h2>
     </div>
-    <a href="other.html" onclick="toggleNav()">Other</a>
-  </div>
 
-  <div class="scrollpanel scrollable center fullscr" style="z-index: -1; padding: 50px 0; overflow:scroll;">
-    <div class="sectionscr">
-      <h1 style="text-align: center; padding:2px;">Information</h1>
-      <p style="text-align: center; padding:2px;">Description text blah blah blah</p>
+    <!-- Nav Icons -->
+    <div style="left:0; bottom:0; width:70%; height:5%; margin:15%; margin-top:25%;">
+        <a href="https://discord.gg/TBAekR968G" target="_blank"><img src="Icons/Discord.png" alt="Discord Icon" style="float:right; height:100%"></a>
+        
     </div>
-  </div>
+</div>
+
+<!-- ScrollPanel -->
+<div style = "right:0; top:0; width:80%; height:100%; position:absolute; overflow-y:overlay; overflow-x:hidden;">
+    <!-- Video -->
+    <div style="right:0; top:0; width:100%;">
+        <div id="ColorOverlay" style="background-color:black; opacity:0.5; position: absolute; top:0; left:0; width:80%;"></div>
+        <video autoplay muted loop id="myVideo" style = "position:relative; margin-left: 40vw; bottom:25%; transform: translate(-50%); width: 100%;">
+            <source src="Icons/YZRender.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <!-- Other Info -->
+    <div style="right:0; top:600px; width:100%; height:600px; background-color:#0e0e11ff;"></div>
+</div>
+
 </html>
