@@ -19,24 +19,77 @@
   background: rgba(50, 50, 50, 0.75);
 }
 
-body{
-  overflow-y:hidden;
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
 }
 
-div {
-  /* margin: 0;
-  padding: 0; */
-}
-
-.sidemenu a {
+#sidemenu a:not(.closebtn) {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-family: 'Trebuchet MS';
+  font-size: 20px;
+  color: #b7b7b785;
   display: block;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
-.sidemenu a:hover {
-  color: #f1f1f1;
+#sidemenu a:hover {
+  color: #b7b7b7c5;
+  font-size: 22px;
+  transition: 0.2s;
 }
+
+#sidemenu a.active {
+  color: #b7b7b7e2;
+  font-size: 23px;
+  /* transition: 0.2s; */
+}
+
+#gallery {
+  line-height:0;
+  -webkit-column-count:3; /* split it into 5 columns */
+  -webkit-column-gap:0; /* give it a 5px gap between columns */
+  -moz-column-count:3;
+  -moz-column-gap:0;
+  column-count:3;
+  column-gap:0;
+}
+
+#gallery img {
+  width: 100% !important;
+  height: auto !important;
+  margin-top:0; /* to match column gap */
+}
+
+@media (max-width: 1200px) {
+  #gallery {
+   -moz-column-count: 2;
+   -webkit-column-count: 2;
+   column-count: 2;
+  }
+}
+
+@media (max-width: 1000px) {
+  #gallery {
+   -moz-column-count: 1;
+   -webkit-column-count: 1;
+   column-count: 1;
+  }
+}
+
+/* @media (max-width: 800px) {
+  #gallery {
+   -moz-column-count: 1;
+   -webkit-column-count: 1;
+   column-count: 1;
+  }
+} */
+
+/* @media (max-width: 400px) {
+  #gallery {
+   -moz-column-count: 1;
+   -webkit-column-count: 1;
+   column-count: 1;
+  }
+} */

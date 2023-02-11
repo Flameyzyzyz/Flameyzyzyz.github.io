@@ -2,33 +2,40 @@
 <html>
 <!-- Main -->
 <link rel="icon" type="image/x-icon" href="Icons/favicon.ico">
-<body style="background:#171615ff;" class="noselect">
+<body style="background:#171615ff;" class="noselect" style="overflow-y:hidden;">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <script src="script.js"></script>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css"/>
     <title>Flameyzyzyz#1037</title>
 </body>
 
 <!-- SideNav -->
-<div id="sidemenu" style="left:0; top:0; width:20%; height:100%; background-color:#171615ff; position:fixed;">
+<div id="sidemenu" style="transition:.5s; left:0; top:0; width:20%; height:100%; background-color:rgb(15, 14, 14); position:fixed;">
     <!-- Menu Button -->
-    <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">
+    <a href="javascript:void(0)" class="closebtn noselect" onclick="toggleNav()">
         <div style="left:0; top:0; width:calc(100%-24px); height:5%; margin:24px;">
             <img src="Icons/Menu.png" alt="Menu Icon" style="height:80%">
         </div>
     </a>
     <a href="index.html" class="active">Home</a>
     <a href="#">UI</a>
-    <a href="#">Modeling</a>
+    <a href="modeling.html">Modeling</a>
     <a href="#">Unity</a>
     <a href="#">Code</a>
     <a href="#">Contact</a>
 </div>
 
-<div id="sidebar" style="left:0; top:0; width:20%; height:100%; background-color:#171615ff; position:fixed;">
+<div id="sidebar" style="transition:.5s; left:0; top:0; width:20%; height:100%; background-color:#171615ff; position:fixed;">
+    <!-- Menu Button -->
+    <a href="javascript:void(0)" class="closebtn noselect" onclick="toggleNav()">
+        <div style="left:0; top:0; width:calc(100%-24px); height:5%; margin:24px;">
+            <img src="Icons/Menu.png" alt="Menu Icon" style="height:80%">
+        </div>
+    </a>
+
     <!-- NavInfo -->
-    <div style="left:0; width:70%; height:50%; margin:15%; margin-top:50%;">
+    <div style="left:0; width:70%; height:50%; margin:15%; margin-top:45%;">
         <h1 style="width:100%; height:20%; font-size:32px; font-weight:bold; font-family:Verdana, Geneva, Tahoma, sans-serif; color:#b7b7b7c5;">
             Home
         </h1>
@@ -38,24 +45,39 @@
     </div>
 
     <!-- Nav Icons -->
-    <div style="left:0; bottom:0; width:70%; height:5%; margin:15%; margin-top:25%;">
+    <div style="left:0; bottom:0; width:70%; height:5%; margin:15%; margin-top:15%;">
         <a href="https://discord.gg/TBAekR968G" target="_blank"><img src="Icons/Discord.png" alt="Discord Icon" style="float:right; height:100%"></a>
-        
     </div>
 </div>
 
 <!-- ScrollPanel -->
 <div style = "right:0; top:0; width:80%; height:100%; position:absolute; overflow-y:overlay; overflow-x:hidden;">
     <!-- Video -->
-    <div style="right:0; top:0; width:100%;">
-        <div id="ColorOverlay" style="background-color:black; opacity:0.5; position: absolute; top:0; left:0; width:80%;"></div>
-        <video autoplay muted loop id="myVideo" style = "position:relative; margin-left: 40vw; bottom:25%; transform: translate(-50%); width: 100%;">
+    <div style="display:inline-block; width:100%;">
+        <!-- <div id="ColorOverlay" style="background-color:black; opacity:0.5; width:80%;"></div> -->
+        <video autoplay muted loop id="myVideo" style = "margin-bottom: -5px;margin-left:40vw; position:relative; transform:translate(-50%); width:100%;">
             <source src="Icons/YZRender.mp4" type="video/mp4">
         </video>
     </div>
     
     <!-- Other Info -->
-    <div style="right:0; top:600px; width:100%; height:600px; background-color:#0e0e11ff;"></div>
+    <div style="display:inline-block; width:100%; background-color:#0e0e11ff;">
+        <div style="top:0; width:100%; padding:5%;">
+            <h1 style="width:100%; height:20%; font-size:32px; font-weight:bold; font-family:Verdana, Geneva, Tahoma, sans-serif; color:#747474c5;">
+                My Projects
+            </h1>
+            <p style="width:100%; height:20%; font-size:18px; font-weight:10; font-family:Verdana, Geneva, Tahoma, sans-serif; color:#747474c5;">
+                Gravitate-
+                <a href="https://play.unity.com/mg/other/gravitate-webgl" target="_blank">https://play.unity.com/mg/other/gravitate-webgl</a>
+            </p>
+        </div>
+    </div>
+
+    <footer style="display:inline-block; width:100%; height:15%; background-color:rgb(10, 10, 10);">
+        <p style="width:100%; text-align:center; margin-top:2%; font-size:14px; font-family:Verdana, Geneva, Tahoma, sans-serif; color:#2f2f2fc5;">
+            <b>&copy;2023 Yidi Zhao, All Rights Reserved</b>
+        </p>
+    </footer>
 </div>
 
 </html>
