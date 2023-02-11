@@ -7,26 +7,26 @@ function toggleNav() {
         document.getElementById("sidemenu").style.left = "-100%";
     }
 }
-function enlargeImage(img) {
-    if (img.style.transform == "scale(1.5)"){
-        img.style.transform = "scale(1)";
-        img.style.transition = "transform 0.25s ease";
-    } else {
-        img.style.transform = "scale(1.5)";
-        img.style.transition = "transform 0.25s ease";
-    }
-}
+// function enlargeImage(img) {
+//     if (img.style.transform == "scale(1.5)"){
+//         img.style.transform = "scale(1)";
+//         img.style.transition = "transform 0.25s ease";
+//     } else {
+//         img.style.transform = "scale(1.5)";
+//         img.style.transition = "transform 0.25s ease";
+//     }
+// }
 
-function getPics() {} //just for this demo
-const imgs = document.querySelectorAll('#column a img');
-const fullPage = document.querySelector('#fullpage');
+// function getPics() {} //just for this demo
+// const imgs = document.querySelectorAll('#column a img');
+// const fullPage = document.querySelector('#fullpage');
 
-imgs.forEach(img => {
-  img.addEventListener('click', function() {
-    fullPage.style.backgroundImage = 'url(' + img.src + ')';
-    fullPage.style.display = 'block';
-  });
-});
+// imgs.forEach(img => {
+//   img.addEventListener('click', function() {
+//     fullPage.style.backgroundImage = 'url(' + img.src + ')';
+//     fullPage.style.display = 'block';
+//   });
+// });
 
 // setTimeout(function (){
 // }, 100)
