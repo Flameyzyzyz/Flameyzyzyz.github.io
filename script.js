@@ -1,12 +1,45 @@
 function toggleNav() {
     if (document.getElementById("sidebar").style.left == "0%"){
-        document.getElementById("sidemenu").style.left = "0px";
+        document.getElementById("sidemenu").style.left = "0%";
         document.getElementById("sidebar").style.left = "-100%";
     } else {
         document.getElementById("sidebar").style.left = "0%";
         document.getElementById("sidemenu").style.left = "-100%";
     }
 }
+
+function fadeMenu(fadeIn) {
+    if (fadeIn) {
+        var op = 0;
+        document.getElementById("fademenu").style.right = "0%";
+        var timer = setInterval(function () {
+            if (op <= 1){
+                document.getElementById("fademenu").style.right = "100%";
+                clearInterval(timer);
+            }
+            document.getElementById("fademenu").style.opacity = op;
+            document.getElementById("fademenu").style.filter = 'alpha(opacity=' + op * 100 + ")";
+            op += op * 0.1;
+        }, 50);
+        // document.getElementById("fademenu").style.display = "block";
+    } else {
+        var op = 1;
+        document.getElementById("fademenu").style.right = "0%";
+        var timer = setInterval(function () {
+            if (op >= 0){
+                document.getElementById("fademenu").style.right = "100%";
+                clearInterval(timer);
+            }
+            document.getElementById("fademenu").style.opacity = op;
+            document.getElementById("fademenu").style.filter = 'alpha(opacity=' + op * 100 + ")";
+            op -= op * 0.1;
+        }, 50);
+        // document.getElementById("fademenu").style.display = "none";
+    }
+}
+fadeMenu(false);
+
+
 // function enlargeImage(img) {
 //     if (img.style.transform == "scale(1.5)"){
 //         img.style.transform = "scale(1)";

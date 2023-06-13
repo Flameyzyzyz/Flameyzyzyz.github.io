@@ -19,6 +19,16 @@
   background: rgba(50, 50, 50, 0.75);
 }
 
+.fullscr {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -60,6 +70,15 @@
   width: 100% !important;
   height: auto !important;
   margin-top:0; /* to match column gap */
+}
+
+#sidebar {
+  transition:.5s;
+  left:0;
+  top:0;
+  width:20%;
+  height:100%;
+  position:fixed;
 }
 
 @media (max-width: 1200px) {
