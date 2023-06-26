@@ -37,7 +37,6 @@ function fadeMenu(fadeIn) {
         // document.getElementById("fademenu").style.display = "none";
     }
 }
-fadeMenu(false);
 
 
 // function enlargeImage(img) {
