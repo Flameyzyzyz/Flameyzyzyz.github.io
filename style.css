@@ -3,17 +3,14 @@
   margin: 0;
   width: 10px;
 }
-
 /* Track */
 ::-webkit-scrollbar-track {
   background: transparent;
 }
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgba(50, 50, 50, 0.5);
 }
-
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(50, 50, 50, 0.75);
@@ -28,11 +25,27 @@
   width:100%;
   height:100%;
 }
-
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
 }
+
+
+.Panel {
+  position:fixed;
+  top:0;
+  height:100%;
+  overflow-y:overlay;
+  overflow-x:hidden;
+}
+.SidePanel {
+  position:fixed;
+  left:0;
+  transition:.5s;
+  width:300px;
+  height:100%;
+}
+
 
 #sidemenu a:not(.closebtn) {
   padding: 8px 8px 8px 32px;
@@ -43,43 +56,58 @@
   display: block;
   transition: 0.2s;
 }
-
 #sidemenu a:hover {
   color: #b7b7b7c5;
   font-size: 22px;
   transition: 0.2s;
 }
-
 #sidemenu a.active {
   color: #b7b7b7e2;
   font-size: 23px;
   /* transition: 0.2s; */
 }
 
+
 #gallery {
   line-height:0;
   -webkit-column-count:3; /* split it into 5 columns */
-  -webkit-column-gap:0; /* give it a 5px gap between columns */
+  -webkit-column-gap:15px; /* give it a 5px gap between columns */
   -moz-column-count:3;
-  -moz-column-gap:0;
+  -moz-column-gap:15px;
   column-count:3;
-  column-gap:0;
+  column-gap:15px;
+  margin:20px;
 }
-
 #gallery img {
+  border:.2rem solid rgb(0 0 0 / 25%);
+  position:relative;
+  z-index:0;
+  transition:.5s;
+  margin:15px;
+  margin-left:5px;
   width: 100% !important;
   height: auto !important;
   margin-top:0; /* to match column gap */
 }
-
-#sidebar {
+#gallery img:hover {
+  z-index:1;
   transition:.5s;
-  left:0;
-  top:0;
-  width:20%;
-  height:100%;
-  position:fixed;
+  /* padding:5px; */
+  width: 110% !important;
+  /* animation-duration:.5s;
+  animation:pulse; */
 }
+
+/* @keyframes pulse {
+  from, to {
+    padding:10px;
+  }
+  50% {
+    padding:12px;
+  }
+} */
+
+
 
 @media (max-width: 1200px) {
   #gallery {
@@ -88,7 +116,6 @@
    column-count: 2;
   }
 }
-
 @media (max-width: 1000px) {
   #gallery {
    -moz-column-count: 1;

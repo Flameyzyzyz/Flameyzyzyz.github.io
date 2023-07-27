@@ -1,10 +1,10 @@
 function toggleNav() {
     if (document.getElementById("sidebar").style.left == "0%"){
         document.getElementById("sidemenu").style.left = "0%";
-        document.getElementById("sidebar").style.left = "-100%";
+        document.getElementById("sidebar").style.left = "-300px";
     } else {
         document.getElementById("sidebar").style.left = "0%";
-        document.getElementById("sidemenu").style.left = "-100%";
+        document.getElementById("sidemenu").style.left = "-300px";
     }
 }
 
