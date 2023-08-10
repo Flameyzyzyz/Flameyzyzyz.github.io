@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <script src="script.js" type="text/javascript"></script>
+    
     <link href="style.css" rel="stylesheet" type="text/css"/>
     <title>Flameyzyzyz#1037</title>
+    <script src="https://unpkg.com/swup@4"></script>
+    <script>
+        // const swup = new Swup();
+    </script>
 </body>
 
 <!-- Fadein -->
@@ -16,15 +21,15 @@
 <!-- SidePanel -->
 <div class="Panel" style = "background-color:rgb(10, 10, 12); width:300px;">
     <!-- SideNav -->
-    <div class="SidePanel" id="sidemenu" style="background-color:rgb(10, 10, 12);">
+    <div class="SidePanel" id="sidemenu" style="left:-300px; background-color:rgb(10, 10, 12);">
         <!-- Menu Button -->
         <a href="javascript:void(0)" class="closebtn noselect" onclick="toggleNav()">
             <div style="left:0; top:0; height:30px; margin:24px;">
                 <img src="Icons/Menu.png" alt="Menu Icon" style="height:80%">
             </div>
         </a>
-        <a href="index.html" class="active">Home</a>
-        <a href="modeling.html">Modeling</a>
+        <a href="/index.html" class="transition-fade active">Home</a>
+        <a href="/modeling.html" class="transition-fade">Modeling</a>
 
         <!-- <a href="#">UI</a>
         <a href="#">Unity</a>
@@ -58,7 +63,7 @@
 </div>
 
 <!-- ScrollPanel -->
-<div class="Panel" style = "background-color: rgb(10, 10, 12); left:300px;">
+<main id="swup" class="transition-fade Panel" style="background-color: rgb(10, 10, 12); left:300px;">
     <!-- Video -->
     <video autoplay muted loop id="myVideo" style = "width:100%;">
         <source src="Icons/YZRender.mp4" type="video/mp4">
@@ -104,6 +109,6 @@
             <b>&copy;2023 Yidi Zhao, All Rights Reserved</b>
         </p>
     </footer>
-</div>
+</main>
 
 </html>

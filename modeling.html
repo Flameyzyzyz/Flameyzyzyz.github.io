@@ -5,9 +5,14 @@
 <body style="background:rgb(129, 75, 22);" class="noselect" style="overflow-y:hidden;">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <script src="script.js" type="text/javascript"></script>
+    <script defer src="script.js" type="text/javascript"></script>
+    
     <link href="style.css" rel="stylesheet" type="text/css"/>
     <title>Flameyzyzyz#1037</title>
+    <script src="https://unpkg.com/swup@4"></script>
+    <script>
+        // const swup = new Swup();
+    </script>
 </body>
 
 <!-- Fadein -->
@@ -16,15 +21,15 @@
 <!-- SidePanel -->
 <div class="Panel" style = "background-color: rgb(99, 59, 23); width:300px;">
     <!-- SideNav -->
-    <div class="SidePanel" id="sidemenu" style="background-color:rgb(99, 59, 23);">
+    <div class="SidePanel" id="sidemenu" style="left:-300px; background-color:rgb(99, 59, 23);">
         <!-- Menu Button -->
         <a href="javascript:void(0)" class="closebtn noselect" onclick="toggleNav()">
             <div style="left:0; top:0; height:30px; margin:24px;">
                 <img src="Icons/Menu.png" alt="Menu Icon" style="height:80%">
             </div>
         </a>
-        <a href="index.html">Home</a>
-        <a href="modeling.html" class="active">Modeling</a>
+        <a href="/index.html" class="transition-fade">Home</a>
+        <a href="/modeling.html" class="transition-fade active">Modeling</a>
 
         <!-- <a href="#">UI</a>
         <a href="#">Unity</a>
@@ -58,7 +63,7 @@
 </div>
 
 <!-- ScrollPanel -->
-<div class="Panel" style = "background-color: rgb(99, 59, 23); left:300px;">
+<main id="swup" class="transition-fade Panel" style="background-color: rgb(99, 59, 23); left:300px;">
     <!-- Video -->
     <div style="display:inline-block; width:100%;">
         <div id="ColorOverlay" style="background-color:black; opacity:0.5; width:100%; height:100%;"></div>
@@ -82,8 +87,8 @@
             <img src="images/modeling/weapons/OmnitechAR-5A.png">
             <img src="images/modeling/weapons/OmnitechAR-5AStudio.png">
             <img src="images/modeling/weapons/DC-15.png">
-            <img src="images/modeling/weapons/AK-47.png">
-            <img src="images/modeling/weapons/AK-47Studio.png">
+            <!-- <img src="images/modeling/weapons/AK-47.png">
+            <img src="images/modeling/weapons/AK-47Studio.png"> -->
             <img src="images/modeling/weapons/Sword.png">
             <img src="images/modeling/weapons/M-25Hornet.png">
             <img src="images/modeling/weapons/M-25HornetRoblox.png">
@@ -95,6 +100,6 @@
             <b>&copy;2023 Yidi Zhao, All Rights Reserved</b>
         </p>
     </footer>
-</div>
+</main>
 
 </html>

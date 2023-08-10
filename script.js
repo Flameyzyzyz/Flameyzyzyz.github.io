@@ -1,10 +1,13 @@
+// import Swup from 'swup';
+// const swup = new Swup();
+
 function toggleNav() {
-    if (document.getElementById("sidebar").style.left == "0%"){
-        document.getElementById("sidemenu").style.left = "0%";
-        document.getElementById("sidebar").style.left = "-300px";
-    } else {
+    if (document.getElementById("sidebar").style.left == "-300px"){
         document.getElementById("sidebar").style.left = "0%";
         document.getElementById("sidemenu").style.left = "-300px";
+    } else {
+        document.getElementById("sidemenu").style.left = "0%";
+        document.getElementById("sidebar").style.left = "-300px";
     }
 }
 
