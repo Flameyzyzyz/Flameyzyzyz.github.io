@@ -1,13 +1,41 @@
 // import Swup from 'swup';
 // const swup = new Swup();
+var isOpen = true;
 
 function toggleNav() {
-    if (document.getElementById("sidebar").style.left == "-300px"){
+    isOpen = !isOpen;
+    if (isOpen){
         document.getElementById("sidebar").style.left = "0%";
         document.getElementById("sidemenu").style.left = "-300px";
     } else {
         document.getElementById("sidemenu").style.left = "0%";
         document.getElementById("sidebar").style.left = "-300px";
+    }
+}
+
+function toggleSide() {
+    if (document.getElementById("SidePanel").style.left == "-300px"){
+        if (isOpen) {
+            document.getElementById("sidebar").style.left = "0%";
+        } else {
+            document.getElementById("sidemenu").style.left = "0%";
+        }
+        document.getElementById("SidePanel").style.left = "0%";
+
+        document.getElementById("hidebtn").style.left = "324px";
+        document.getElementById("hideicon").src = "Icons/Hide.png";
+
+        document.getElementById("swup").style.left = "300px";
+    } else {
+        document.getElementById("SidePanel").style.left = "-300px";
+        
+        document.getElementById("sidebar").style.left = "-300px";
+        document.getElementById("sidemenu").style.left = "-300px";
+
+        document.getElementById("hidebtn").style.left = "20px";
+        document.getElementById("hideicon").src = "Icons/Show.png";
+        
+        document.getElementById("swup").style.left = "0%";
     }
 }
 
