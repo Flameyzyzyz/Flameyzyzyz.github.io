@@ -43,7 +43,7 @@
         <a href="#">Contact</a> -->
     </div>
 
-    <div class="SidePanel" id="sidebar" style="background-color:rgb(14, 14, 17); overflow-y:overlay; overflow-x:hidden;">
+    <div class="SidePanel" id="sidebar" style="background-color:rgb(14, 14, 17);">
         <!-- Menu Button -->
         <a href="javascript:void(0)" class="closebtn noselect" onclick="toggleNav()">
             <div style="left:0; top:0; height:30px; margin:24px;">
@@ -76,6 +76,9 @@
         <video autoplay muted loop id="myVideo" style = "height:100vh; position:relative; left:50%; transform:translateX(-50%);">
             <source src="Icons/YZRender.mp4" type="video/mp4">
         </video>
+        <script>
+            document.getElementById('myVideo').play();
+        </script>
     </div>
     
     <!-- Other Info -->
