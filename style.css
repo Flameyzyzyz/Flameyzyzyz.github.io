@@ -1,8 +1,8 @@
 .transition-fade {
   /* opacity:1; */
   transition:.75s;
-  top:0;
-  transform:translateX(0);
+  /* top:-100%; */
+  transform:translateY(0);
   /* left:100%; */
   /* transform-origin:left; */
 }
@@ -10,14 +10,13 @@ html.is-animating .transition-fade {
   /* opacity: 0; */
   /* transform:left(100%); */
   /* left:100%; */
-  transform:translateX(100%);
+  transform:translateY(-100%);
 }
 html.is-leaving .transition-fade {
   /* opacity: 0; */
   /* transform:left(300px); */
   /* left:100%; */
-  transform:translateX(100%);
-
+  transform:translateY(-100%);
 }
 
 /* width */
