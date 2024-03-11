@@ -71,9 +71,9 @@
 <!-- ScrollPanel -->
 <main id="swup" class="transition-fade Panel" style="background-color: rgb(99, 59, 23); left:300px; right:0px; transition:.5s;">
     <!-- Video -->
-    <div style="display:inline-block; width:100%;">
+    <div style="display:inline-block; height:100vh; overflow:hidden;">
         <div id="ColorOverlay" style="background-color:black; opacity:0.5; width:100%; height:100%;"></div>
-        <video autoplay muted loop id="myVideo" style = "height:100vh; position:relative; left:50%; transform:translateX(-50%);">
+        <video autoplay muted loop id="myVideo" style = "position:relative; left:50%; bottom:50%; max-width:100.1%; min-height:100%; object-fit:fill; transform:translate(-50%, -50%);">
             <source src="icons/ModelingVid.mp4" type="video/mp4">
         </video>
         <script>

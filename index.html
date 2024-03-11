@@ -29,13 +29,14 @@
     <!-- SideNav -->
     <div class="SidePanel" id="sidemenu" style="left:-300px; background-color:rgb(10, 10, 12);">
         <!-- Menu Button -->
-        <a href="javascript:void(0)" class="closebtn noselect" onclick="toggleNav()">
-            <div style="left:0; top:0; height:30px; margin:24px;">
-                <img src="Icons/Menu.png" alt="Menu Icon" style="height:80%">
-            </div>
+        <a href="javascript:void(0)" class="closebtn noselect" onclick="toggleNav()" style="position:absolute; width:300px; left:0; top:0; height:78px;">
+            <img src="Icons/Menu.png" alt="Menu Icon" style="height:30px; margin:24px;">
         </a>
-        <a href="/index.html" class="transition-fade active">Home</a>
-        <a href="/modeling.html" class="transition-fade">Modeling</a>
+        <ul style="position:absolute; padding:0; top:78px; width:100%">
+            <a href="/index.html" class="transition-fade active">Home</a>
+            <a href="/modeling.html" class="transition-fade">Modeling</a>
+        </ul>
+        
 
         <!-- <a href="#">UI</a>
         <a href="#">Unity</a>
@@ -45,24 +46,22 @@
 
     <div class="SidePanel" id="sidebar" style="background-color:rgb(14, 14, 17);">
         <!-- Menu Button -->
-        <a href="javascript:void(0)" class="closebtn noselect" onclick="toggleNav()">
-            <div style="left:0; top:0; height:30px; margin:24px;">
-                <img src="Icons/Menu.png" alt="Menu Icon" style="height:80%">
-            </div>
+        <a href="javascript:void(0)" class="closebtn noselect" onclick="toggleNav()" style="position:absolute; width:300px; left:0; top:0; height:78px;">
+            <img src="Icons/Menu.png" alt="Menu Icon" style="height:30px; margin:24px;">
         </a>
 
         <!-- NavInfo -->
-        <div style="left:0; width:70%; height:50%; margin:15%; margin-top:45%;">
-            <h1 style="width:100%; height:20%; font-size:32px; font-weight:bold; font-family:Verdana, Geneva, Tahoma, sans-serif; color:#b7b7b7c5;">
+        <div style="position:absolute; top:78px; width:300px; height:100vh;">
+            <h1 style="padding:0 24px; width:auto; height:20%; font-size:32px; font-weight:bold; font-family:Verdana, Geneva, Tahoma, sans-serif; color:#b7b7b7c5;">
                 Home
             </h1>
-            <h2 style="width:100%; height:20%; font-size:18px; font-weight:10; font-family:Verdana, Geneva, Tahoma, sans-serif; color:#b7b7b7c5;">
-                Welcome, blah blah blah interesting stuff about me blah. I am a Programmer/3D Modeler
+            <h2 style="padding:0 24px; width:auto; height:20%; font-size:18px; font-weight:10; font-family:Verdana, Geneva, Tahoma, sans-serif; color:#b7b7b7c5;">
+                Welcome to my portfolio, where I will display my projects and blah
             </h2>
         </div>
 
         <!-- Nav Icons -->
-        <div style="left:0; bottom:0; width:70%; height:30px; margin:15%; margin-top:15%;">
+        <div style="position:absolute; left:0; bottom:0px; width:70%; height:30px; margin:15%; margin-top:15%;">
             <a href="https://discord.gg/TBAekR968G" target="_blank"><img src="Icons/Discord.png" alt="Discord Icon" style="float:right; height:100%"></a>
         </div>
     </div>
@@ -71,10 +70,10 @@
 <!-- ScrollPanel -->
 <main id="swup" class="transition-fade Panel" style="background-color: rgb(10, 10, 12); left:300px; right:0px; transition:.5s;">
     <!-- Video -->
-    <div style="display:inline-block; width:100%;">
+    <div style="display:inline-block; height:100vh; overflow:hidden;">
         <div id="ColorOverlay" style="background-color:black; opacity:0.5; width:100%; height:100%;"></div>
-        <video autoplay muted loop id="myVideo" style = "height:100vh; position:relative; left:50%; transform:translateX(-50%);">
-            <source src="Icons/YZRender.mp4" type="video/mp4">
+        <video autoplay muted loop id="myVideo" style = "position:relative; left:50%; bottom:0px; max-width:100%; min-height:100%; object-fit:fill; transform:translate(-50%, -100%);">
+            <source src="Icons/YZRenderLoop.mp4" type="video/mp4">
         </video>
         <script>
             document.getElementById('myVideo').play();
@@ -99,7 +98,6 @@
             </h2>
             <p style="height:20%; font-size:18px; font-weight:10; font-family:Verdana, Geneva, Tahoma, sans-serif; color:#747474c5;">
                 <a href="https://www.roblox.com/groups/7312398/Innoventors" target="_blank"><b>Roblox group</b></a><br><br>
-                
                 <a href="https://www.roblox.com/games/5504128003" target="_blank">IQ</a> 
                 (First game I've made on roblox, very broken rn)- Concept: solve puzzles to move to the next level <br>
                 <a href="https://www.roblox.com/games/6633834557" target="_blank">Fluid</a> 
