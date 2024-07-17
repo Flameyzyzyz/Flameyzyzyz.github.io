@@ -30,12 +30,14 @@
     <div class="SidePanel" id="sidemenu" style="left:-300px; background-color:rgb(99, 59, 23);">
         <!-- Menu Button -->
         <a href="javascript:void(0)" class="closebtn noselect" onclick="toggleNav()">
-            <div style="left:0; top:0; height:30px; margin:24px;">
-                <img src="Icons/Menu.png" alt="Menu Icon" style="height:80%">
-            </div>
+            <a href="javascript:void(0)" class="closebtn noselect" onclick="toggleNav()" style="position:absolute; width:300px; left:0; top:0; height:78px;">
+                <img src="Icons/Menu.png" alt="Menu Icon" style="height:30px; margin:24px;">
+            </a>
         </a>
-        <a href="/index.html" class="transition-fade">Home</a>
-        <a href="/modeling.html" class="transition-fade active">Modeling</a>
+        <ul style="position:absolute; padding:0; top:78px; width:100%">
+            <a href="/index.html" class="transition-fade">Home</a>
+            <a href="/modeling.html" class="transition-fade active">Modeling</a>
+        </ul>
 
         <!-- <a href="#">UI</a>
         <a href="#">Unity</a>
@@ -45,24 +47,22 @@
 
     <div class="SidePanel" id="sidebar" style="background-color:rgb(129, 75, 22); overflow-y:overlay; overflow-x:hidden;">
         <!-- Menu Button -->
-        <a href="javascript:void(0)" class="closebtn noselect" onclick="toggleNav()">
-            <div style="left:0; top:0; height:30px; margin:24px;">
-                <img src="Icons/Menu.png" alt="Menu Icon" style="height:80%">
-            </div>
+        <a href="javascript:void(0)" class="closebtn noselect" onclick="toggleNav()" style="position:absolute; width:300px; left:0; top:0; height:78px;">
+            <img src="Icons/Menu.png" alt="Menu Icon" style="height:30px; margin:24px;">
         </a>
 
         <!-- NavInfo -->
-        <div style="left:0; width:70%; height:50%; margin:15%; margin-top:45%;">
-            <h1 style="width:100%; height:20%; font-size:32px; font-weight:bold; font-family:Verdana, Geneva, Tahoma, sans-serif; color:#b7b7b7c5;">
+        <div style="position:absolute; top:45%; transform:translate(0, -50%); width:300px; ">
+            <h1 style="padding:0 40px; width:auto; height:20%; font-size:32px; font-weight:bold; font-family:Verdana, Geneva, Tahoma, sans-serif; color:#b7b7b7c5;">
                 Modeling
             </h1>
-            <h2 style="width:100%; height:20%; font-size:18px; font-weight:10; font-family:Verdana, Geneva, Tahoma, sans-serif; color:#b7b7b7c5;">
+            <h2 style="padding:0 40px; width:auto; height:20%; font-size:18px; font-weight:10; font-family:Verdana, Geneva, Tahoma, sans-serif; color:#b7b7b7c5;">
                 Modeler since 2019, most of which for roblox commissions or personal projects. THIS PAGE IS NOT EVEN CLOSE TO FINISHED SO CHECK IN LATER
             </h2>
         </div>
 
         <!-- Nav Icons -->
-        <div style="left:0; bottom:0; width:70%; height:30px; margin:15%; margin-top:15%;">
+        <div style="position:absolute; left:0; bottom:0px; width:70%; height:30px; margin:15%; margin-top:15%;">
             <a href="https://discord.gg/TBAekR968G" target="_blank"><img src="Icons/Discord.png" alt="Discord Icon" style="float:right; height:100%"></a>
         </div>
     </div>
@@ -106,7 +106,7 @@
 
     <footer style="display:inline-block; width:100%; height:15%; background-color:rgb(70, 41, 16);">
         <p style="width:100%; text-align:center; margin-top:2%; font-size:14px; font-family:Verdana, Geneva, Tahoma, sans-serif; color:rgb(99, 59, 23);">
-            <b>&copy;2023 Yidi Zhao, All Rights Reserved</b>
+            <b>&copy;2024 Yidi Zhao, All Rights Reserved</b>
         </p>
     </footer>
 </main>
